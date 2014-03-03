@@ -1,0 +1,20 @@
+extends ../layout
+block content
+  #post.new
+    h2 Create a Post
+    form(action="/posts", method="POST")
+      .field
+        label(for="post_title") Title
+        br
+        input(id="post_title", name="post[title]", type="text", size="80")
+      .field
+        label(for="post_content") Content
+        br
+        textarea(id="post_content", name="post[content]" cols="80", rows="15")
+      .field
+        label(for="post_tags") Tags (separated by commas)
+        br
+        input(id="post_tags", name="post[tags]", type="text", size="80")
+      .button
+        input(type="submit", value="Create")
+

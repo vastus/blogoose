@@ -1,0 +1,14 @@
+extends ../layout
+block content
+  #posts
+    if posts
+      - each post in posts
+        article.post
+          .title
+            h1
+              a(href="posts/" + post._id)= post.title
+          .content
+            = post.content
+    else
+      p No posts yet.
+  

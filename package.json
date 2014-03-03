@@ -1,0 +1,23 @@
+{
+  "name": "blogoose",
+  "version": "0.0.1",
+  "description": "Usage demo of Mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "mongodb",
+    "mongoose",
+    "blog"
+  ],
+  "author": "Juho H.",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~3.4.8",
+    "mongoose": "~3.8.8",
+    "jade": "~1.3.0",
+    "async": "~0.2.10"
+  }
+}
