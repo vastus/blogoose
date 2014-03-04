@@ -7,5 +7,5 @@ module.exports = function Post(mongoose) {
     });
 
     return mongoose.model('Post', schema);
-}
+};
 
