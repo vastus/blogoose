@@ -8,6 +8,7 @@ path = require('path');
  */
 BASEDIR = __dirname;
 MODELDIR = path.join(BASEDIR, 'models');
+CTRLRDIR = path.join(BASEDIR, 'controllers');
 DBDIR = path.join(BASEDIR, 'db');
 MONGOURI = process.env.MONGOLAB_URI ||
     process.env.MONGOHQ_URL ||
