@@ -1,0 +1,24 @@
+extends ../layout
+block content
+  #post.new
+    h2 Update Post
+    form(action="/posts/#{post._id}", method="POST")
+      input(type="hidden", name="_method", value="put")
+      .field
+        label(for="post_title") Title
+        br
+        input(id="post_title", name="post[title]", type="text",
+        value="#{post.title}" size="80")
+      .field
+        label(for="post_content") Content
+        br
+        textarea(id="post_content", name="post[content]" cols="80", rows="15")
+          = post.content
+      .field
+        label(for="post_tags") Tags (separated by commas)
+        br
+        input(id="post_tags", name="post[tags]", type="text",
+        value="#{post.tags}", size="80")
+      .button
+        input(type="submit", value="Update")
+
